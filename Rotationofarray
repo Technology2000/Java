@@ -1,0 +1,24 @@
+//Left rotation of an array
+public class Rotation {
+    public static void main(String args[]) {
+      int array[]={1,2,3,4,5};
+      int n=3,first,j;
+      System.out.println("Array elements before rotation is");
+      for(int i=0;i<array.length;i++){
+          System.out.print(array[i]+" ");
+      }
+      System.out.println();
+      for(int i=0;i<n;i++){
+          first=array[0];
+          for(j=0;j<array.length-1;j++){
+              array[j]=array[j+1];
+          }
+          array[j]=first;
+      }
+      System.out.println("Array elements after rotation is");
+      for(int k=0;k<array.length;k++){
+          System.out.print(array[k]+" ");
+      }
+      
+    }
+}
